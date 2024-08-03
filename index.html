@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Model Toggle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #buttons {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      gap: 20px;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    button {
+      margin: 5px 0;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+    button:active {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <div id="buttons">
+    <div class="column">
+      <button id="toggle1">Toggle 1</button>
+      <button id="toggle2">Toggle 2</button>
+      <button id="toggle3">Toggle 3</button>
+      <button id="toggle4">Toggle  4</button>
+      <button id="toggle5">Toggle  5</button>
+      <button id="toggle6">Toggle  6</button>
+      <button id="toggle7">Toggle  7</button>
+      <button id="toggle8">Toggle  8</button>
+    </div>
+    <div class="column">
+      <button id="color1"> Color  1</button>
+      <button id="color2"> Color 1</button>
+      <button id="color3"> Color  3</button>
+      <button id="color4"> Color  4</button>
+      <button id="color5"> Color  5</button>
+      <button id="color6"> Color  6</button>
+      <button id="color7"> Color  7</button>
+      <button id="color8"> Color  8</button>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
